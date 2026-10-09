@@ -21,17 +21,6 @@ inject();
   });
 })();
 
-// Slider arrows (services, portfolio, reviews)
-document.querySelectorAll("[data-slider]").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const slider = document.getElementById(btn.dataset.slider + "-slider");
-    if (!slider || !slider.firstElementChild) return;
-    const gap = parseFloat(getComputedStyle(slider).columnGap) || 0;
-    const step = slider.firstElementChild.getBoundingClientRect().width + gap;
-    slider.scrollBy({ left: step * Number(btn.dataset.dir), behavior: "smooth" });
-  });
-});
-
 // Active nav link while scrolling
 (function () {
   const links = Array.from(document.querySelectorAll(".nav__menu a"));
@@ -57,3 +46,31 @@ document.querySelectorAll("[data-slider]").forEach((btn) => {
 // Footer year
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Booking note: a short form that starts an email to the studio.
+(function () {
+  const note = document.getElementById("book-note");
+  const form = document.getElementById("book-form");
+  if (!note || !form || typeof note.showModal !== "function") return;
+
+  document.querySelectorAll("[data-book]").forEach((button) => {
+    button.addEventListener("click", () => note.showModal());
+  });
+
+  note.querySelector("[data-close]").addEventListener("click", () => note.close());
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const body = [
+      `Name: ${data.get("name")}`,
+      `Email: ${data.get("email")}`,
+      `Kind of session: ${data.get("kind")}`,
+      `Date: ${data.get("date")}`,
+    ].join("\n");
+    const mail = `mailto:hello@maraellis.studio?subject=${encodeURIComponent("Session request")}&body=${encodeURIComponent(body)}`;
+    form.reset();
+    note.close();
+    window.location.href = mail;
+  });
+})();

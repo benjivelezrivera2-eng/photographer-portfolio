@@ -7,17 +7,18 @@
   <meta name="description" content="The visual portfolio and studio shop of Mara Ellis, a photographer creating soulful portraits, celebrations, and brand imagery.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <meta property="og:image" content="https://bolt.new/static/og_default.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+  <link rel="preload" as="image" href="https://images.pexels.com/photos/39835122/pexels-photo-39835122.jpeg?auto=compress&cs=tinysrgb&w=1600">
+  <meta property="og:image" content="https://images.pexels.com/photos/39835122/pexels-photo-39835122.jpeg?auto=compress&cs=tinysrgb&w=1600">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/39835122/pexels-photo-39835122.jpeg?auto=compress&cs=tinysrgb&w=1600">
 </head>
 <body>
 
   <!-- ============ NAV ============ -->
   <header class="nav">
-    <a class="nav__logo" href="#home">MARA</a>
+    <a class="nav__logo" href="#home">Mara</a>
     <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span>
     </button>
@@ -27,22 +28,108 @@
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn--outline nav__cta" href="#contact">Book a Call</a>
+    <button class="btn btn--outline nav__cta" type="button" data-book>Book a session</button>
   </header>
 
   <main id="home">
 
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="hero__rings" aria-hidden="true"></div>
-      <div class="hero__text">
-        <p class="eyebrow">Thoughtful images by</p>
-        <h1 class="hero__name">MARA ELLIS</h1>
+      <img
+        class="hero__photo"
+        src="https://images.pexels.com/photos/39835122/pexels-photo-39835122.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Black and white editorial portrait"
+        width="940"
+        height="650"
+        fetchpriority="high"
+      >
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__bar">
+        <h1 class="hero__name">Mara Ellis</h1>
+        <button class="hero__cta" type="button" data-book>
+          <span>Book a session <i class="pill pill--arrow" aria-hidden="true"></i></span>
+        </button>
       </div>
-      <a class="hero__cta" href="#contact">
-        <span>LET'S <i class="pill pill--arrow" aria-hidden="true"></i></span>
-        <span>WORK TOGETHER</span>
-      </a>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section portfolio" id="portfolio">
+      <div class="section__head">
+        <div>
+          <h2 class="h2">A few favorite stories</h2>
+        </div>
+        <button class="btn btn--outline" type="button" data-book>Book a session</button>
+      </div>
+
+      <div class="stories">
+        <article class="story" id="portraits">
+          <div class="story__head">
+            <h3 class="story__title">Portraits</h3>
+            <a href="#portraits">View Project</a>
+          </div>
+          <div class="story__grid story__grid--3">
+            <figure class="frame">
+              <div class="ph frame__img" style="--img:url('https://images.pexels.com/photos/31435674/pexels-photo-31435674.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Editorial portrait of a woman"></div>
+            </figure>
+            <figure class="frame">
+              <div class="ph frame__img" style="--img:url('https://images.pexels.com/photos/7205439/pexels-photo-7205439.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Studio portrait session"></div>
+            </figure>
+            <figure class="frame">
+              <div class="ph frame__img" style="--img:url('https://images.pexels.com/photos/19315970/pexels-photo-19315970.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Editorial fashion portrait"></div>
+            </figure>
+          </div>
+          <blockquote class="quote">
+            <p>Mara made the whole experience feel calm and effortless. The photographs feel exactly like us, only braver.</p>
+            <footer><cite>Clara Bennett</cite><span>Brooklyn, NY</span></footer>
+          </blockquote>
+        </article>
+
+        <article class="story" id="weddings">
+          <div class="story__head">
+            <h3 class="story__title">Weddings</h3>
+            <a href="#weddings">View Project</a>
+          </div>
+          <div class="story__grid story__grid--2">
+            <figure class="frame">
+              <div class="ph frame__img" style="--img:url('https://images.pexels.com/photos/2253867/pexels-photo-2253867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Wedding couple embracing"></div>
+            </figure>
+            <figure class="frame">
+              <div class="ph frame__img" style="--img:url('https://images.pexels.com/photos/21928800/pexels-photo-21928800.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Wedding bouquet on satin"></div>
+              <figcaption><strong>Before the Vows</strong><span>Wedding · 2025</span></figcaption>
+            </figure>
+          </div>
+          <blockquote class="quote">
+            <p>She noticed all the little in-between moments we missed. Our wedding gallery is honest, beautiful, and completely ours.</p>
+            <footer><cite>Naomi Carter</cite><span>Chicago, IL</span></footer>
+          </blockquote>
+        </article>
+
+        <article class="story" id="brand">
+          <div class="story__head">
+            <h3 class="story__title">Brand</h3>
+            <a href="#brand">View Project</a>
+          </div>
+          <div class="story__grid story__grid--2">
+            <figure class="frame">
+              <div class="ph frame__img" style="--img:url('https://images.pexels.com/photos/27844882/pexels-photo-27844882.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Woman in a tailored suit surrounded by plants"></div>
+              <figcaption><strong>New Rituals</strong><span>Personal Brand · 2024</span></figcaption>
+            </figure>
+            <figure class="frame">
+              <div class="ph frame__img" style="--img:url('https://images.pexels.com/photos/28481966/pexels-photo-28481966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Perfume product still life"></div>
+            </figure>
+          </div>
+          <div class="story__quotes">
+            <blockquote class="quote">
+              <p>Our launch finally looked the way our brand felt. Every image had intention, warmth, and a point of view.</p>
+              <footer><cite>Priya Shah</cite><span>London, UK</span></footer>
+            </blockquote>
+            <blockquote class="quote">
+              <p>The images gave our small collection a whole new life. Thoughtful direction, beautiful light, and zero fuss.</p>
+              <footer><cite>Elena Ruiz</cite><span>Austin, TX</span></footer>
+            </blockquote>
+          </div>
+        </article>
+      </div>
     </section>
 
     <div class="marquee" aria-hidden="true">
@@ -52,41 +139,20 @@
       </div>
     </div>
 
-    <section class="collage" aria-label="Featured work">
-      <div class="ph ph-a collage__a" style="--img:url('https://images.pexels.com/photos/31435674/pexels-photo-31435674.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Editorial portrait of a woman"></div>
-      <div class="ph ph-b collage__b" style="--img:url('https://images.pexels.com/photos/2253867/pexels-photo-2253867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Wedding couple embracing"></div>
-      <div class="ph ph-c collage__c" style="--img:url('https://images.pexels.com/photos/27844882/pexels-photo-27844882.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Woman in a tailored suit surrounded by plants"></div>
-      <div class="ph ph-d collage__d" style="--img:url('https://images.pexels.com/photos/28481966/pexels-photo-28481966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Perfume product still life"></div>
-      <div class="ph ph-e collage__e" style="--img:url('https://images.pexels.com/photos/19315970/pexels-photo-19315970.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Editorial fashion portrait"></div>
-      <div class="ph ph-f collage__f" style="--img:url('https://images.pexels.com/photos/21928800/pexels-photo-21928800.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Wedding bouquet on satin"></div>
-      <div class="ph ph-g collage__g" style="--img:url('https://images.pexels.com/photos/9129824/pexels-photo-9129824.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Luxury lifestyle still life"></div>
-    </section>
-
     <!-- ============ ABOUT ============ -->
     <section class="section about" id="about">
       <div class="section__head">
-        <div>
-          <p class="label">About</p>
-          <h2 class="h2">I AM MARA</h2>
-        </div>
-        <a class="btn btn--outline" href="#about">Know More <span class="btn__icon">&#8599;</span></a>
+        <h2 class="h2">I am Mara</h2>
       </div>
 
-      <div class="about__grid">
-        <div class="about__photo">
-          <div class="ph ph-portrait" style="--img:url('https://images.pexels.com/photos/39715527/pexels-photo-39715527.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Portrait of Mara, the photographer"></div>
-          <span class="about__curve about__curve--tl" aria-hidden="true"></span>
-          <span class="about__curve about__curve--br" aria-hidden="true"></span>
-        </div>
-
-        <div class="about__cards">
+      <div class="about__cards">
           <article class="card">
-            <h3 class="card__title"><i class="spark" aria-hidden="true"></i> Introduction</h3>
+            <h3 class="card__title">Introduction</h3>
             <p>I photograph the feeling underneath the picture: the laugh before the toast, the confidence after the first look, the quiet luxury of a well-made thing. Based between Brooklyn and wherever the work takes me, I create honest, tactile images for people and brands with something to say.</p>
           </article>
 
           <article class="card">
-            <h3 class="card__title"><i class="spark" aria-hidden="true"></i> Studio Information</h3>
+            <h3 class="card__title">Studio Information</h3>
             <div class="contact">
               <div>
                 <p class="contact__k">Email</p>
@@ -98,16 +164,9 @@
               </div>
             </div>
             <div class="contact__row">
-              <div class="socials">
-                <a href="#" aria-label="Facebook">f</a>
-                <a href="#" aria-label="X">x</a>
-                <a href="#" aria-label="LinkedIn">in</a>
-              </div>
-              <a class="btn btn--dark" href="#contact">Enquire</a>
-              <a class="btn btn--dark" href="#portfolio">Visit Shop</a>
+              <button class="btn btn--dark" type="button" data-book>Book a session</button>
             </div>
           </article>
-        </div>
       </div>
     </section>
 
@@ -115,118 +174,46 @@
     <section class="section services" id="services">
       <div class="section__head">
         <div>
-          <p class="label">Services</p>
-          <h2 class="h2">WAYS TO WORK TOGETHER</h2>
+          <h2 class="h2">Ways to work together</h2>
         </div>
-        <div class="head-actions">
-          <button class="circle" data-slider="services" data-dir="-1" aria-label="Previous service">&#8249;</button>
-          <button class="circle" data-slider="services" data-dir="1" aria-label="Next service">&#8250;</button>
-          <a class="btn btn--outline" href="#contact">See Packages <span class="btn__icon">&#8599;</span></a>
-        </div>
+        <a class="btn btn--outline" href="#contact">See Packages</a>
       </div>
 
-      <div class="slider" id="services-slider">
+      <div class="services__list">
         <article class="service">
-          <div class="service__body">
-            <h3 class="service__title">PORTRAITS <i class="pill pill--arrow" aria-hidden="true"></i></h3>
-            <p class="service__text">Unhurried portrait sessions for founders, artists, couples, and anyone ready to be seen as they are. We build a visual mood together, then make space for the good stuff to happen.</p>
-            <p class="service__sub">The session includes</p>
-            <ul class="highlights">
-              <li><span>90 minutes in studio or on location</span></li>
-              <li><span>Pre-shoot planning and wardrobe guidance</span></li>
-              <li><span>25 hand-finished digital photographs</span></li>
-              <li><span>Private gallery with print ordering</span></li>
-            </ul>
-          </div>
-          <div class="ph ph-service service__img" style="--img:url('https://images.pexels.com/photos/7205439/pexels-photo-7205439.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Studio portrait session"></div>
+          <h3 class="service__title">Portraits</h3>
+          <p class="service__text">Unhurried portrait sessions for founders, artists, couples, and anyone ready to be seen as they are. We build a visual mood together, then make space for the good stuff to happen.</p>
+          <p class="service__sub">The session includes</p>
+          <ul class="highlights">
+            <li><span>90 minutes in studio or on location</span></li>
+            <li><span>Pre-shoot planning and wardrobe guidance</span></li>
+            <li><span>25 hand-finished digital photographs</span></li>
+            <li><span>Private gallery with print ordering</span></li>
+          </ul>
         </article>
 
         <article class="service">
-          <div class="service__body">
-            <h3 class="service__title">BRAND STORIES <i class="pill pill--arrow" aria-hidden="true"></i></h3>
-            <p class="service__text">A considered image library for small brands, makers, and creative teams. From a single hero image to a full campaign, every frame is made to feel unmistakably yours.</p>
-            <p class="service__sub">The package includes</p>
-            <ul class="highlights">
-              <li><span>Half-day or full-day production options</span></li>
-              <li><span>Shot list, styling and creative direction</span></li>
-              <li><span>Commercial usage rights included</span></li>
-              <li><span>Web-ready files delivered in two weeks</span></li>
-            </ul>
-          </div>
-          <div class="ph ph-service2 service__img" style="--img:url('https://images.pexels.com/photos/28481966/pexels-photo-28481966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Luxury product still life"></div>
+          <h3 class="service__title">Brand stories</h3>
+          <p class="service__text">A considered image library for small brands, makers, and creative teams. From a single hero image to a full campaign, every frame is made to feel unmistakably yours.</p>
+          <p class="service__sub">The package includes</p>
+          <ul class="highlights">
+            <li><span>Half-day or full-day production options</span></li>
+            <li><span>Shot list, styling and creative direction</span></li>
+            <li><span>Commercial usage rights included</span></li>
+            <li><span>Web-ready files delivered in two weeks</span></li>
+          </ul>
         </article>
 
         <article class="service">
-          <div class="service__body">
-            <h3 class="service__title">WEDDINGS + PACKAGES <i class="pill pill--arrow" aria-hidden="true"></i></h3>
-            <p class="service__text">Soft, observant coverage for wedding weekends and milestone gatherings. Choose a short story, a full-day keepsake, or add albums and framed prints to make it tangible.</p>
-            <p class="service__sub">Choose your extras</p>
-            <ul class="highlights">
-              <li><span>Elopement, half-day and full-weekend coverage</span></li>
-              <li><span>High-resolution digital gallery included</span></li>
-              <li><span>Archival albums and museum-quality prints</span></li>
-              <li><span>Film scans, rush edits and gifting available</span></li>
-            </ul>
-          </div>
-          <div class="ph ph-service3 service__img" style="--img:url('https://images.pexels.com/photos/2253867/pexels-photo-2253867.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Wedding couple embracing"></div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ============ PORTFOLIO ============ -->
-    <section class="section portfolio" id="portfolio">
-      <div class="section__head">
-        <div>
-          <p class="label">Portfolio</p>
-          <h2 class="h2">A FEW FAVORITE STORIES.</h2>
-        </div>
-        <div class="head-actions">
-          <button class="circle" data-slider="work" data-dir="-1" aria-label="Previous project">&#8249;</button>
-          <button class="circle" data-slider="work" data-dir="1" aria-label="Next project">&#8250;</button>
-          <a class="btn btn--outline" href="#contact">Start a Project <span class="btn__icon">&#8599;</span></a>
-        </div>
-      </div>
-
-      <div class="slider slider--cards" id="work-slider">
-        <article class="work">
-          <div class="ph ph-w1 work__img" style="--img:url('https://images.pexels.com/photos/39835122/pexels-photo-39835122.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Black and white editorial portrait"></div>
-          <div class="work__meta">
-            <div>
-              <h3>Soft Armor</h3>
-              <p>Editorial · 2025</p>
-            </div>
-            <a href="#">View Project <span>&#8599;</span></a>
-          </div>
-        </article>
-        <article class="work">
-          <div class="ph ph-w2 work__img" style="--img:url('https://images.pexels.com/photos/21928800/pexels-photo-21928800.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Wedding bouquet story"></div>
-          <div class="work__meta">
-            <div>
-              <h3>Before the Vows</h3>
-              <p>Wedding · 2025</p>
-            </div>
-            <a href="#">View Project <span>&#8599;</span></a>
-          </div>
-        </article>
-        <article class="work">
-          <div class="ph ph-w3 work__img" style="--img:url('https://images.pexels.com/photos/16722451/pexels-photo-16722451.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Luxury perfume product image"></div>
-          <div class="work__meta">
-            <div>
-              <h3>Objects of Desire</h3>
-              <p>Brand Story · 2024</p>
-            </div>
-            <a href="#">View Project <span>&#8599;</span></a>
-          </div>
-        </article>
-        <article class="work">
-          <div class="ph ph-w4 work__img" style="--img:url('https://images.pexels.com/photos/27844882/pexels-photo-27844882.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')" role="img" aria-label="Woman in tailored suit portrait"></div>
-          <div class="work__meta">
-            <div>
-              <h3>New Rituals</h3>
-              <p>Personal Brand · 2024</p>
-            </div>
-            <a href="#">View Project <span>&#8599;</span></a>
-          </div>
+          <h3 class="service__title">Weddings and packages</h3>
+          <p class="service__text">Soft, observant coverage for wedding weekends and milestone gatherings. Choose a short story, a full-day keepsake, or add albums and framed prints to make it tangible.</p>
+          <p class="service__sub">Choose your extras</p>
+          <ul class="highlights">
+            <li><span>Elopement, half-day and full-weekend coverage</span></li>
+            <li><span>High-resolution digital gallery included</span></li>
+            <li><span>Archival albums and museum-quality prints</span></li>
+            <li><span>Film scans, rush edits and gifting available</span></li>
+          </ul>
         </article>
       </div>
     </section>
@@ -235,8 +222,7 @@
     <section class="section faq">
       <div class="section__head">
         <div>
-          <p class="label">FAQs</p>
-          <h2 class="h2">THE DETAILS, MADE SIMPLE.</h2>
+          <h2 class="h2">The details, made simple</h2>
         </div>
       </div>
 
@@ -280,76 +266,16 @@
       </div>
     </section>
 
-    <!-- ============ TESTIMONIALS ============ -->
-    <section class="section testimonials">
-      <div class="section__head">
-        <div>
-          <p class="label">Testimonials</p>
-          <h2 class="h2">KIND WORDS FROM GOOD PEOPLE</h2>
-          <p class="stat"><span>Five-star stories</span><strong>148</strong></p>
-        </div>
-        <div class="head-actions">
-          <button class="circle" data-slider="reviews" data-dir="-1" aria-label="Previous review">&#8249;</button>
-          <button class="circle" data-slider="reviews" data-dir="1" aria-label="Next review">&#8250;</button>
-          <a class="btn btn--outline" href="#contact">Work with Mara <span class="btn__icon">&#8599;</span></a>
-        </div>
-      </div>
-
-      <div class="slider slider--cards" id="reviews-slider">
-        <article class="review">
-          <header>
-            <div><h3>Clara Bennett</h3><p>Brooklyn, NY</p></div>
-            <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
-          </header>
-          <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p>Mara made the whole experience feel calm and effortless. The photographs feel exactly like us, only braver.</p>
-        </article>
-        <article class="review">
-          <header>
-            <div><h3>Priya Shah</h3><p>London, UK</p></div>
-            <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
-          </header>
-          <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p>Our launch finally looked the way our brand felt. Every image had intention, warmth, and a point of view.</p>
-        </article>
-        <article class="review">
-          <header>
-            <div><h3>Naomi Carter</h3><p>Chicago, IL</p></div>
-            <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
-          </header>
-          <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p>She noticed all the little in-between moments we missed. Our wedding gallery is honest, beautiful, and completely ours.</p>
-        </article>
-        <article class="review">
-          <header>
-            <div><h3>Elena Ruiz</h3><p>Austin, TX</p></div>
-            <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
-          </header>
-          <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p>The images gave our small collection a whole new life. Thoughtful direction, beautiful light, and zero fuss.</p>
-        </article>
-      </div>
-    </section>
-
-    <div class="ghost" aria-hidden="true">MARA</div>
   </main>
 
   <!-- ============ FOOTER ============ -->
-  <div class="marquee marquee--footer" aria-hidden="true">
-    <div class="marquee__track">
-      <span>Portrait Sessions</span><span>Brand Stories</span><span>Wedding Weekends</span><span>Fine Art Prints</span><span>Digital Presets</span><span>Mentorship</span><span>Editorial Photography</span>
-      <span>Portrait Sessions</span><span>Brand Stories</span><span>Wedding Weekends</span><span>Fine Art Prints</span><span>Digital Presets</span><span>Mentorship</span><span>Editorial Photography</span>
-    </div>
-  </div>
-
   <footer class="footer" id="contact">
     <div class="footer__top">
       <div class="footer__cta">
         <p class="eyebrow">A softer way to remember what matters</p>
-        <a class="footer__big" href="mailto:hello@maraellis.studio">
-          <span>LET'S <i class="pill pill--arrow" aria-hidden="true"></i></span>
-          <span>WORK TOGETHER</span>
-        </a>
+        <button class="footer__big" type="button" data-book>
+          <span>Book a session <i class="pill pill--arrow" aria-hidden="true"></i></span>
+        </button>
       </div>
       <nav class="footer__cols" aria-label="Footer">
         <div>
@@ -360,22 +286,14 @@
         </div>
         <div>
           <h4>Work with me</h4>
-          <a href="#services">Portraits</a>
-          <a href="#services">Weddings</a>
-          <a href="#services">Brand Stories</a>
+          <a href="#portraits">Portraits</a>
+          <a href="#weddings">Weddings</a>
+          <a href="#brand">Brand Stories</a>
           <a href="#services">Mentorship</a>
-        </div>
-        <div>
-          <h4>Shop</h4>
-          <a href="#portfolio">Fine Art Prints</a>
-          <a href="#portfolio">Digital Presets</a>
-          <a href="#portfolio">Gift Cards</a>
-          <a href="#portfolio">Albums</a>
         </div>
         <div>
           <h4>Resources</h4>
           <a href="#services">Packages</a>
-          <a href="#services">Prints</a>
           <a href="#services">Education</a>
         </div>
       </nav>
@@ -383,10 +301,36 @@
 
     <div class="footer__bottom">
       <p><a href="#">Terms &amp; Conditions</a> <a href="#">Privacy Policy</a></p>
-      <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
       <p class="copy">&copy; <span id="year">2026</span> Mara Ellis Studio. All rights reserved.</p>
     </div>
   </footer>
+
+  <dialog class="note" id="book-note" aria-labelledby="book-title">
+    <form id="book-form">
+      <h2 id="book-title">Book a session</h2>
+      <label for="book-name">Name
+        <input id="book-name" name="name" type="text" autocomplete="name" required>
+      </label>
+      <label for="book-email">Email
+        <input id="book-email" name="email" type="email" autocomplete="email" required>
+      </label>
+      <label for="book-kind">Kind of session
+        <select id="book-kind" name="kind" required>
+          <option value="">Choose one</option>
+          <option>Portraits</option>
+          <option>Weddings</option>
+          <option>Brand</option>
+        </select>
+      </label>
+      <label for="book-date">Date
+        <input id="book-date" name="date" type="date" required>
+      </label>
+      <div class="note__actions">
+        <button class="btn btn--outline" type="button" data-close>Close</button>
+        <button class="btn btn--dark" type="submit">Send</button>
+      </div>
+    </form>
+  </dialog>
 
   <script type="module" src="main.js"></script>
 </body>

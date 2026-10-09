@@ -1,0 +1,35 @@
+# Implementation plan
+
+We do this in six passes. After each one, we look at the page before starting the next.
+
+The warm paper background and the clay accent stay. So does Manrope for reading text. The photographs stay the ones already on the site.
+
+## 1. Make the words readable — done
+
+Body text is a normal reading size. Captions, questions, and city names came up with it. Headlines are sentence case. The name uses its own typeface, Bodoni Moda. Everything else stays in Manrope.
+
+Layout, pictures, and buttons were left where they were.
+
+## 2. Take off the extra decoration — done
+
+Each section loses the small label above the title. The spark icons, the rings on Mara’s photo, the circles behind the name, and the giant MARA watermark come out.
+
+Arrow buttons stay only on the booking link. The ticker runs once, in a color light enough to read. The second ticker goes away. “Know More” goes away.
+
+## 3. Show each picture once, in three stories — done
+
+Each photo gets one spot. The work splits into Portraits, Weddings, and Brand. Frames that show another brand’s name come out.
+
+“View Project” stops being a dead link. The side-to-side sliders go away.
+
+## 4. Open on a photograph — done
+
+The first thing on the page becomes one large photograph, with the name set on it. The three stories begin underneath. The share preview uses that opening photograph.
+
+## 5. One way to book — done
+
+Every booking button becomes “Book a session.” It opens a short note (name, email, kind of session, date) that starts an email to the studio. The shop links and the f / x / in buttons come out until those pages exist.
+
+## 6. Put each quote with the work it describes — done
+
+Stars, the “148” count, and the social buttons on each review come out. Wedding quotes sit with Weddings. Brand quotes sit with Brand.
