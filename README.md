@@ -1,7 +1,6 @@
-# Photographer Portfolio (dark theme)
+# Mara Ellis Photography
 
-Static, desktop-first, responsive portfolio site. Plain HTML, CSS and JS, no build step.
-Recreated from a Figma Community photographer template layout, with original placeholder content.
+Warm, editorial, responsive portfolio site for a fictional female photographer. Built from the provided photographer template with original demo content and imagery.
 
 ## Files
 
@@ -13,12 +12,12 @@ Recreated from a Figma Community photographer template layout, with original pla
 
 ## Run it
 
-Open `index.html` in a browser, or serve the folder: `npx serve .`
+The project uses Vite so the in-app preview can start correctly. Use the Preview tab in Bolt to view the site.
 
 ## Replace the placeholder content
 
-- **Name / text:** search `index.html` for `Alex Morgan`, `ALEX`, `hello@yourdomain.com`, `+00 000 000 0000`.
-- **Photos:** every image slot is a `<div class="ph ...">` with a gradient placeholder. To use a real photo, add `style="--img:url('images/photo.jpg')"` to that element and put the file in an `images/` folder.
+- **Name / text:** edit the fictional Mara Ellis content in `index.html`.
+- **Photos:** image slots use Pexels image URLs and can be replaced with your own images later.
 - **Colors / fonts:** edit the variables at the top of `styles.css`. Font is Manrope via Google Fonts.
 - **Sections:** Hero, About, Services (slider), Portfolio (slider), FAQ, Testimonials (slider), Footer.
 
