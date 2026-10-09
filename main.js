@@ -1,3 +1,7 @@
+// Import and initialize Vercel Analytics
+import { inject } from '@vercel/analytics';
+inject();
+
 // Tiny, dependency-free interactions.
 
 // Mobile menu toggle
