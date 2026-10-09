@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Morgan | Photographer Portfolio</title>
+  <meta name="description" content="Portfolio of Alex Morgan, a photographer specializing in events, weddings, portraits, products and landscapes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a class="nav__logo" href="#home">ALEX</a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__menu" aria-label="Main">
+      <a class="is-active" href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+    </nav>
+    <a class="btn btn--outline nav__cta" href="#contact">Contact Me</a>
+  </header>
+
+  <main id="home">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__rings" aria-hidden="true"></div>
+      <div class="hero__text">
+        <p class="eyebrow">Stunning photography by</p>
+        <h1 class="hero__name">ALEX MORGAN</h1>
+      </div>
+      <a class="hero__cta" href="#contact">
+        <span>LET'S <i class="pill pill--arrow" aria-hidden="true"></i></span>
+        <span>WORK TOGETHER</span>
+      </a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Event Photography</span><span>Commercial Photography</span><span>Product Photography</span><span>Wedding Photography</span><span>Landscape Photography</span><span>Branding Photography</span><span>Portrait Photography</span>
+        <span>Event Photography</span><span>Commercial Photography</span><span>Product Photography</span><span>Wedding Photography</span><span>Landscape Photography</span><span>Branding Photography</span><span>Portrait Photography</span>
+      </div>
+    </div>
+
+    <section class="collage" aria-label="Featured work">
+      <div class="ph ph-a collage__a" role="img" aria-label="Featured photo 1"></div>
+      <div class="ph ph-b collage__b" role="img" aria-label="Featured photo 2"></div>
+      <div class="ph ph-c collage__c" role="img" aria-label="Featured photo 3"></div>
+      <div class="ph ph-d collage__d" role="img" aria-label="Featured photo 4"></div>
+      <div class="ph ph-e collage__e" role="img" aria-label="Featured photo 5"></div>
+      <div class="ph ph-f collage__f" role="img" aria-label="Featured photo 6"></div>
+      <div class="ph ph-g collage__g" role="img" aria-label="Featured photo 7"></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="section__head">
+        <div>
+          <p class="label">About</p>
+          <h2 class="h2">I AM ALEX</h2>
+        </div>
+        <a class="btn btn--outline" href="#about">Know More <span class="btn__icon">&#8599;</span></a>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__photo">
+          <div class="ph ph-portrait" role="img" aria-label="Portrait of the photographer"></div>
+          <span class="about__curve about__curve--tl" aria-hidden="true"></span>
+          <span class="about__curve about__curve--br" aria-hidden="true"></span>
+        </div>
+
+        <div class="about__cards">
+          <article class="card">
+            <h3 class="card__title"><i class="spark" aria-hidden="true"></i> Introduction</h3>
+            <p>My journey as a photographer has been a lifelong quest to capture the extraordinary in the ordinary, to freeze fleeting moments in time, and to share the world's beauty as I see it. Based in a vibrant city, I find inspiration in every corner of the world. Whether it's a quiet portrait, a loud celebration, or a sweeping landscape, I aim to make each photograph tell a story that lasts.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title"><i class="spark" aria-hidden="true"></i> Contact Information</h3>
+            <div class="contact">
+              <div>
+                <p class="contact__k">Email</p>
+                <p class="contact__v">hello@yourdomain.com</p>
+              </div>
+              <div>
+                <p class="contact__k">Phone Number</p>
+                <p class="contact__v">+00 000 000 0000</p>
+              </div>
+            </div>
+            <div class="contact__row">
+              <div class="socials">
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="X">x</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+              </div>
+              <a class="btn btn--dark" href="#contact">Let's Work</a>
+              <a class="btn btn--dark" href="#">Download CV</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="section__head">
+        <div>
+          <p class="label">Services</p>
+          <h2 class="h2">MY PHOTOGRAPHY SERVICES</h2>
+        </div>
+        <div class="head-actions">
+          <button class="circle" data-slider="services" data-dir="-1" aria-label="Previous service">&#8249;</button>
+          <button class="circle" data-slider="services" data-dir="1" aria-label="Next service">&#8250;</button>
+          <a class="btn btn--outline" href="#services">View All Services <span class="btn__icon">&#8599;</span></a>
+        </div>
+      </div>
+
+      <div class="slider" id="services-slider">
+        <article class="service">
+          <div class="service__body">
+            <h3 class="service__title">EVENTS <i class="pill pill--arrow" aria-hidden="true"></i></h3>
+            <p class="service__text">Event photography is about capturing the magic of live occasions. Whether it's a wedding, corporate event, or milestone celebration, I'm there to document every heartfelt moment, from the big reveals to the quiet in-between glances that people forget happened.</p>
+            <p class="service__sub">Service Highlights</p>
+            <ul class="highlights">
+              <li><span>Coverage for weddings, parties, corporate functions, and more</span></li>
+              <li><span>Skilled photography that knows how to seize the moment</span></li>
+              <li><span>A mix of candid and posed shots for a comprehensive story</span></li>
+              <li><span>Quick turnaround so you can relive the day's highlights</span></li>
+            </ul>
+          </div>
+          <div class="ph ph-service service__img" role="img" aria-label="Event photography sample"></div>
+        </article>
+
+        <article class="service">
+          <div class="service__body">
+            <h3 class="service__title">PORTRAITS <i class="pill pill--arrow" aria-hidden="true"></i></h3>
+            <p class="service__text">Personal, editorial and professional portraits that feel natural and look sharp. We plan the look together, then I guide you through the session so you relax and the photographs show who you really are.</p>
+            <p class="service__sub">Service Highlights</p>
+            <ul class="highlights">
+              <li><span>Studio or on-location sessions</span></li>
+              <li><span>Lighting and styling direction included</span></li>
+              <li><span>Retouched final selects, ready for web and print</span></li>
+              <li><span>Headshots, family, couples and personal branding</span></li>
+            </ul>
+          </div>
+          <div class="ph ph-service2 service__img" role="img" aria-label="Portrait photography sample"></div>
+        </article>
+
+        <article class="service">
+          <div class="service__body">
+            <h3 class="service__title">PRODUCTS <i class="pill pill--arrow" aria-hidden="true"></i></h3>
+            <p class="service__text">Clean, detail-rich product and brand photography for shops, packaging and campaigns. Every shot is composed to show quality and make the product the hero.</p>
+            <p class="service__sub">Service Highlights</p>
+            <ul class="highlights">
+              <li><span>White-background and styled lifestyle shots</span></li>
+              <li><span>Consistent look across a whole catalog</span></li>
+              <li><span>Web-optimized and print-ready files</span></li>
+              <li><span>Fast delivery for launches and promotions</span></li>
+            </ul>
+          </div>
+          <div class="ph ph-service3 service__img" role="img" aria-label="Product photography sample"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section portfolio" id="portfolio">
+      <div class="section__head">
+        <div>
+          <p class="label">Portfolio</p>
+          <h2 class="h2">EXPLORE MY PHOTOGRAPHY WORK.</h2>
+        </div>
+        <div class="head-actions">
+          <button class="circle" data-slider="work" data-dir="-1" aria-label="Previous project">&#8249;</button>
+          <button class="circle" data-slider="work" data-dir="1" aria-label="Next project">&#8250;</button>
+          <a class="btn btn--outline" href="#portfolio">View All Work <span class="btn__icon">&#8599;</span></a>
+        </div>
+      </div>
+
+      <div class="slider slider--cards" id="work-slider">
+        <article class="work">
+          <div class="ph ph-w1 work__img" role="img" aria-label="Project 1"></div>
+          <div class="work__meta">
+            <div>
+              <h3>Faces of Resilience</h3>
+              <p>March 2025</p>
+            </div>
+            <a href="#">View Project <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article class="work">
+          <div class="ph ph-w2 work__img" role="img" aria-label="Project 2"></div>
+          <div class="work__meta">
+            <div>
+              <h3>A Wedding Tale</h3>
+              <p>January 2025</p>
+            </div>
+            <a href="#">View Project <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article class="work">
+          <div class="ph ph-w3 work__img" role="img" aria-label="Project 3"></div>
+          <div class="work__meta">
+            <div>
+              <h3>Product Elegance</h3>
+              <p>January 2025</p>
+            </div>
+            <a href="#">View Project <span>&#8599;</span></a>
+          </div>
+        </article>
+        <article class="work">
+          <div class="ph ph-w4 work__img" role="img" aria-label="Project 4"></div>
+          <div class="work__meta">
+            <div>
+              <h3>Golden Hour Hills</h3>
+              <p>November 2024</p>
+            </div>
+            <a href="#">View Project <span>&#8599;</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq">
+      <div class="section__head">
+        <div>
+          <p class="label">FAQs</p>
+          <h2 class="h2">FREQUENTLY ASKED QUESTIONS</h2>
+        </div>
+      </div>
+
+      <div class="faq__grid">
+        <div class="faq__col">
+          <details class="qa" open>
+            <summary>What type of photography do you specialize in?</summary>
+            <p>I specialize in portrait, landscape, event and commercial photography, capturing memorable moments with a natural, editorial look.</p>
+          </details>
+          <details class="qa">
+            <summary>How can I book a photography session with you?</summary>
+            <p>Send a message through the contact section with your date, location and what you have in mind. I reply within one business day with availability and a quote.</p>
+          </details>
+          <details class="qa">
+            <summary>What equipment do you use for your photography?</summary>
+            <p>I shoot on professional mirrorless cameras with a range of prime and zoom lenses, plus portable lighting for studio and on-location work.</p>
+          </details>
+          <details class="qa">
+            <summary>Can I request a specific location for a shoot?</summary>
+            <p>Yes. I travel for shoots and can also suggest locations that suit the mood and style you want.</p>
+          </details>
+        </div>
+        <div class="faq__col">
+          <details class="qa">
+            <summary>What is your editing process like?</summary>
+            <p>I cull the best frames, then color-grade and retouch each selected photo so the final set looks consistent and polished.</p>
+          </details>
+          <details class="qa">
+            <summary>Are digital files included in your photography packages?</summary>
+            <p>Yes, every package includes high-resolution digital files delivered through a private online gallery.</p>
+          </details>
+          <details class="qa">
+            <summary>Do you offer prints of your photographs?</summary>
+            <p>Prints are available for purchase. Ask about the "Prints" option for sizes, paper types and pricing.</p>
+          </details>
+          <details class="qa">
+            <summary>How long does it take to receive the edited photos after a session?</summary>
+            <p>Most galleries are delivered within two weeks. Events and rush orders can be turned around faster on request.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials">
+      <div class="section__head">
+        <div>
+          <p class="label">Testimonials</p>
+          <h2 class="h2">WHAT MY CLIENTS SAY</h2>
+          <p class="stat"><span>Total Reviews</span><strong>323</strong></p>
+        </div>
+        <div class="head-actions">
+          <button class="circle" data-slider="reviews" data-dir="-1" aria-label="Previous review">&#8249;</button>
+          <button class="circle" data-slider="reviews" data-dir="1" aria-label="Next review">&#8250;</button>
+          <a class="btn btn--outline" href="#">View All Testimonials <span class="btn__icon">&#8599;</span></a>
+        </div>
+      </div>
+
+      <div class="slider slider--cards" id="reviews-slider">
+        <article class="review">
+          <header>
+            <div><h3>Emily Johnson</h3><p>USA, California</p></div>
+            <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
+          </header>
+          <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p>Alex's photography doesn't just capture moments, it captures emotions. Her work is simply mesmerizing.</p>
+        </article>
+        <article class="review">
+          <header>
+            <div><h3>John Smith</h3><p>USA, California</p></div>
+            <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
+          </header>
+          <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p>Alex has an incredible talent for making every event feel effortless, and the photos speak for themselves.</p>
+        </article>
+        <article class="review">
+          <header>
+            <div><h3>Samantha Davis</h3><p>USA, California</p></div>
+            <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
+          </header>
+          <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p>I was blown away by Alex's ability to capture the essence of our wedding day. Her photographs are our cherished memories.</p>
+        </article>
+        <article class="review">
+          <header>
+            <div><h3>Marcus Lee</h3><p>USA, Colorado</p></div>
+            <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
+          </header>
+          <p class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p>Professional, fast and creative. Our product launch photos were exactly what the brand needed.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="ghost" aria-hidden="true">ALEX</div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="marquee marquee--footer" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Event Photography</span><span>Commercial Photography</span><span>Product Photography</span><span>Wedding Photography</span><span>Landscape Photography</span><span>Branding Photography</span><span>Portrait Photography</span>
+      <span>Event Photography</span><span>Commercial Photography</span><span>Product Photography</span><span>Wedding Photography</span><span>Landscape Photography</span><span>Branding Photography</span><span>Portrait Photography</span>
+    </div>
+  </div>
+
+  <footer class="footer" id="contact">
+    <div class="footer__top">
+      <div class="footer__cta">
+        <p class="eyebrow">A more meaningful home for photography</p>
+        <a class="footer__big" href="mailto:hello@yourdomain.com">
+          <span>LET'S <i class="pill pill--arrow" aria-hidden="true"></i></span>
+          <span>WORK TOGETHER</span>
+        </a>
+      </div>
+      <nav class="footer__cols" aria-label="Footer">
+        <div>
+          <h4>Home</h4>
+          <a href="#about">About Me</a>
+          <a href="#portfolio">My Work</a>
+          <a href="#">Testimonials</a>
+        </div>
+        <div>
+          <h4>Clients</h4>
+          <a href="#">Brand One</a>
+          <a href="#">Brand Two</a>
+          <a href="#">Brand Three</a>
+          <a href="#">Brand Four</a>
+        </div>
+        <div>
+          <h4>Portfolio</h4>
+          <a href="#">Events</a>
+          <a href="#">Portraits</a>
+          <a href="#">Branding</a>
+          <a href="#">Commercial</a>
+          <a href="#">Weddings</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="#services">Events</a>
+          <a href="#services">Portraits</a>
+          <a href="#services">Commercial</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p><a href="#">Terms &amp; Conditions</a> <a href="#">Privacy Policy</a></p>
+      <div class="socials socials--sm"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">x</a><a href="#" aria-label="LinkedIn">in</a></div>
+      <p class="copy">&copy; <span id="year">2026</span> Alex Morgan Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
