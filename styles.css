@@ -254,11 +254,9 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .card__title { font-size: 18px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; text-wrap: balance; }
 .card p { color: var(--muted); font-size: 16px; line-height: 1.6; }
-.contact { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .contact__k { font-size: 14px; color: var(--muted); margin-bottom: 2px; }
 .contact__v { font-size: 16px; color: var(--text) !important; }
-.contact__row { display: flex; align-items: center; gap: 10px; }
-.contact__row .btn { padding-block: 11px; }
 
 /* ---------- services ---------- */
 .services__list {
@@ -272,18 +270,20 @@ ul { list-style: none; margin: 0; padding: 0; }
   letter-spacing: -0.015em;
   color: #49382f;
   display: flex; align-items: center; gap: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 4px;
   text-wrap: balance;
+}
+.service__rate {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: var(--muted);
 }
 .service__text { color: var(--muted); font-size: 16px; line-height: 1.6; max-width: 36rem; margin-bottom: 20px; }
 .service__sub { font-size: 16px; font-weight: 600; margin-bottom: 10px; }
 .highlights { display: grid; gap: 8px; }
 .highlights li {
   display: flex; align-items: center; gap: 12px;
-  border: 1px solid var(--line);
-  background: var(--card);
-  border-radius: 8px;
-  padding: 12px 14px;
+  padding: 4px 0;
   font-size: 16px;
   letter-spacing: 0;
   text-transform: none;
@@ -291,10 +291,9 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .highlights li::before {
   content: "";
-  flex: 0 0 14px; height: 14px;
-  border: 1px solid var(--line-2);
-  border-radius: 3px;
-  background: radial-gradient(circle, var(--accent-2) 0 2px, transparent 3px);
+  flex: 0 0 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 /* ---------- stories ---------- */
 .stories { display: grid; gap: 56px; }
@@ -306,11 +305,9 @@ ul { list-style: none; margin: 0; padding: 0; }
   margin-bottom: 14px;
 }
 .story__title { font-size: 22px; font-weight: 600; letter-spacing: -0.015em; text-wrap: balance; }
-.story__head a { font-size: 14px; font-weight: 600; }
-.story__head a:hover { color: var(--accent); }
 .story__grid { display: grid; gap: 10px; align-items: start; }
 .story__grid--3 { grid-template-columns: repeat(3, 1fr); }
-.story__grid--2 { grid-template-columns: 1.15fr 0.85fr; }
+.story__grid--2 { grid-template-columns: 1fr 1fr; }
 .frame { margin: 0; }
 .frame__img { aspect-ratio: 4 / 5; border-radius: 12px; }
 .frame figcaption { margin-top: 8px; display: flex; flex-direction: column; }
@@ -319,13 +316,18 @@ ul { list-style: none; margin: 0; padding: 0; }
 .story__quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; }
 .quote {
   margin: 18px 0 0;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--card);
-  padding: 20px 22px;
+  border: 0;
+  background: none;
+  padding: 0;
 }
 .story__quotes .quote { margin-top: 0; }
-.quote p { font-size: 16px; line-height: 1.6; color: var(--muted); }
+.quote p {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--muted);
+}
 .quote footer { display: flex; flex-direction: column; margin-top: 12px; }
 .quote cite { font-style: normal; font-size: 16px; font-weight: 600; color: var(--text); }
 .quote footer span { font-size: 14px; color: var(--muted); }
@@ -384,8 +386,6 @@ ul { list-style: none; margin: 0; padding: 0; }
   border-top: 1px solid var(--line);
   font-size: 10px; color: var(--muted);
 }
-.footer__bottom p a { margin-right: 18px; }
-.footer__bottom p a:hover { color: var(--text); }
 
 /* ---------- booking note ---------- */
 .note {
@@ -430,6 +430,8 @@ ul { list-style: none; margin: 0; padding: 0; }
   .about__cards { grid-template-columns: 1fr; }
   .services__list { grid-template-columns: 1fr; }
   .story__grid--3 { grid-template-columns: 1fr 1fr; }
+  .story__grid--3 .frame:last-child { grid-column: 1 / -1; }
+  .story__grid--3 .frame:last-child .frame__img { aspect-ratio: 3 / 2; }
   .story__grid--2 { grid-template-columns: 1fr 1fr; }
   .footer__top { grid-template-columns: 1fr; }
   .section__head { flex-direction: column; align-items: flex-start; }
@@ -465,7 +467,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 
   .section { padding-block: 44px; }
   .contact { grid-template-columns: 1fr; }
-  .contact__row { flex-wrap: wrap; }
   .story__grid--3,
   .story__grid--2 { grid-template-columns: 1fr 1fr; }
   .story__quotes { grid-template-columns: 1fr; }
